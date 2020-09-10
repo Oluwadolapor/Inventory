@@ -47,11 +47,12 @@ form ul{
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 form ol{
+  
   border-bottom: 1px dotted white;
   background-image:linear-gradient(to left, #10adaf 0%, #bf16c2 100%);
   font-size: 22px;
   padding: 5px;
-  width: 320px;
+  width: 450px;
   text-align: justify;
   color: white;
   overflow: hidden;
@@ -69,6 +70,7 @@ form ol:hover{
     background: none;
     color: white;
     border: none;
+    float: right;
   }
 .list button:hover{
   border: none;
