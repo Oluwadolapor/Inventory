@@ -1,8 +1,17 @@
+*{
+  margin:0;
+  padding:0;
+  
+}
 .App{
+
  
   text-align: center;
   min-height: 100vh;
   background-image:linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+}
+.header{
+  color: white;
 }
 form{
   min-height: 5vh;
@@ -14,6 +23,7 @@ form input, form button{
   border: none;
   background: white;
   font-size: 22px;
+  padding: 5px;
 }
 form button{
   color: #fc00ff;
@@ -22,4 +32,7 @@ form button{
 form button:hover{
   background: #fc00ff;
   color: white;
+}
+.list{
+  color: white
 }
