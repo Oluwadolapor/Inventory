@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
 *{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin:0;
   padding:0;
   
@@ -13,36 +18,67 @@
   padding-bottom: 30px;
   color: white;
 }
-form{
+.form, form{
   min-height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-form input, form button{
+.form input, .form button{
   border: none;
   background: white;
   font-size: 22px;
   padding: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
-form button{
+.form button{
   color: #fc00ff;
   cursor: pointer;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
-form button:hover{
+.form button:hover{
   background: #fc00ff;
   color: white;
 }
 form ul{
   margin-top: 20px;
   margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 form ol{
-  margin-top: 10px;
-  background: #b40db4e1;
+  border-bottom: 1px dotted white;
+  background-image:linear-gradient(to left, #10adaf 0%, #bf16c2 100%);
   font-size: 22px;
   padding: 5px;
-  width: 300px;
+  width: 320px;
   text-align: justify;
   color: white;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
+form ol:hover{
+  cursor: pointer;
+  overflow: show;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+.list button{
+  font-size: 22px;
+    background: none;
+    color: white;
+    border: none;
+  }
+.list button:hover{
+  border: none;
+}
+
+/* .swing {
+  
+ 
+ 
+  
+  animation: .3s linear forwards;
+  transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+} */
