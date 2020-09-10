@@ -4,8 +4,6 @@
   
 }
 .App{
-
- 
   text-align: center;
   min-height: 100vh;
   background-image:linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
@@ -37,12 +35,14 @@ form button:hover{
 }
 form ul{
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 form ol{
   margin-top: 10px;
-  background: white;
+  background: #b40db4e1;
   font-size: 22px;
   padding: 5px;
   width: 300px;
-  text-align: justify
+  text-align: justify;
+  color: white;
 }
