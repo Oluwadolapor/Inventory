@@ -14,15 +14,28 @@ class App extends Component{
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.deleteList = this.deleteList.bind(this);
   }
   
   handleSubmit = (event) =>{
+
     event.preventDefault();
     let todo = event.target[0].value;
-    this.setState((prevState) =>{ 
-      return {todos: [...this.state.todos, todo]}
-    });
+    if(todo !=''){
+      this.setState((prevState) =>{ 
+        return {todos: [...this.state.todos, todo]}
+      });
+    }
+    
     event.target[0].value = ''
+
+  }
+  deleteList = (event,index) => {
+    event.preventDefault();
+    const todo = this.state.todos
+    todo.splice(index,1) 
+    this.setState({todo: [...todo]})
+   
   }
   render(){
     return(
@@ -30,7 +43,7 @@ class App extends Component{
        <Header/>
         <Form  handleSubmit={this.handleSubmit}  />
         
-        <List lists={this.state.todos}/>
+        <List lists={this.state.todos} deleteList={this.deleteList}/>
       </div>
     )
   }
