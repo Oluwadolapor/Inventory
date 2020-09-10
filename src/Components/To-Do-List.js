@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
 
 class List extends Component{
+    deleteList = () => {
+
+    }
     render(){
         return(
             <div className='list-container'>
-                <ul className="list">
+                <form>
+                <ul className="listClass">
                     {this.props.lists.map((list, index) => {
-                        return <ol key={index}>{list}<button>delete</button></ol>
+                        return <ol className="list" key={index}>{list}</ol>
                     })}
                 </ul>
+                </form>
+                
             </div>
         )
     }
